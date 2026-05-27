@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0f2744">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="SW-JnU">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<meta name="description" content="জগন্নাথ বিশ্ববিদ্যালয় সমাজকর্ম বিভাগ - ৬ষ্ঠ ব্যাচ অ্যালামনাই">
+<title>স্মৃতির পাতায় সমাজকর্ম</title>
+<link rel="manifest" id="manifest-placeholder">
+<script>
+const manifestData = {
+  "name": "স্মৃতির পাতায় সমাজকর্ম",
+  "short_name": "SW-JnU",
+  "description": "জগন্নাথ বিশ্ববিদ্যালয় সমাজকর্ম বিভাগ ৬ষ্ঠ ব্যাচ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f2744",
+  "theme_color": "#0f2744",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "data:image/png;base64,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",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/png;base64,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",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+};
+const blob = new Blob([JSON.stringify(manifestData)], {type: 'application/json'});
+const manifestURL = URL.createObjectURL(blob);
+document.getElementById('manifest-placeholder').setAttribute('href', manifestURL);
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0f2744;
+    --blue: #1a4a8a;
+    --sky: #2d7dd2;
+    --gold: #e8b84b;
+    --cream: #fdf6e3;
+    --white: #ffffff;
+    --gray: #6b7280;
+    --light: #f0f4f8;
+    --card-shadow: 0 4px 24px rgba(15,39,68,0.13);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Hind Siliguri', sans-serif;
+    background: var(--light);
+    color: var(--navy);
+    min-height: 100vh;
+  }
+
+  /* HEADER */
+  header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 60%, var(--sky) 100%);
+    color: white;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  }
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+  }
+  .logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .logo-icon {
+    width: 42px; height: 42px;
+    background: var(--gold);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  .logo-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--gold);
+  }
+  .logo-text p {
+    font-size: 11px;
+    opacity: 0.8;
+  }
+  .header-actions {
+    display: flex;
+    gap: 8px;
+  }
+  .btn-icon {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    border-radius: 8px;
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s;
+  }
+  .btn-icon:hover { background: rgba(255,255,255,0.25); }
+
+  /* SEARCH BAR */
+  .search-bar {
+    padding: 8px 16px 14px;
+  }
+  .search-input-wrap {
+    position: relative;
+  }
+  .search-input-wrap input {
+    width: 100%;
+    padding: 10px 16px 10px 40px;
+    border-radius: 24px;
+    border: none;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 14px;
+    outline: none;
+    backdrop-filter: blur(4px);
+  }
+  .search-input-wrap input::placeholder { color: rgba(255,255,255,0.6); }
+  .search-icon {
+    position: absolute;
+    left: 12px; top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    opacity: 0.7;
+  }
+
+  /* STATS BAR */
+  .stats-bar {
+    display: flex;
+    gap: 8px;
+    padding: 12px 16px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .stats-bar::-webkit-scrollbar { display: none; }
+  .stat-chip {
+    background: white;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 12px;
+    white-space: nowrap;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+    color: var(--navy);
+    font-weight: 500;
+  }
+  .stat-chip.active {
+    background: var(--navy);
+    color: white;
+    border-color: var(--navy);
+  }
+  .stat-chip:hover:not(.active) { border-color: var(--sky); }
+
+  /* MAIN CONTENT */
+  main { padding: 0 12px 80px; }
+
+  /* TABS */
+  .tabs {
+    display: flex;
+    gap: 0;
+    background: white;
+    border-radius: 12px;
+    padding: 4px;
+    margin: 12px 0;
+    box-shadow: var(--card-shadow);
+  }
+  .tab {
+    flex: 1;
+    text-align: center;
+    padding: 9px 4px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s;
+    color: var(--gray);
+  }
+  .tab.active {
+    background: var(--navy);
+    color: white;
+  }
+
+  /* ALUMNI GRID */
+  .alumni-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .alumni-card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation: fadeIn 0.4s ease both;
+  }
+  .alumni-card:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(15,39,68,0.18); }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .card-avatar {
+    width: 100%;
+    aspect-ratio: 1;
+    background: linear-gradient(135deg, var(--navy), var(--sky));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    overflow: hidden;
+  }
+  .card-avatar img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  .card-avatar .avatar-initial {
+    position: absolute;
+    font-size: 40px;
+  }
+
+  .card-body { padding: 10px; }
+  .card-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.3;
+    margin-bottom: 3px;
+  }
+  .card-roll {
+    font-size: 11px;
+    color: var(--sky);
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .card-job {
+    font-size: 11px;
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .card-district {
+    font-size: 10px;
+    color: var(--gray);
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  /* LIST VIEW */
+  .alumni-list { display: none; flex-direction: column; gap: 8px; }
+  .list-card {
+    background: white;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: var(--card-shadow);
+    cursor: pointer;
+    transition: all 0.2s;
+    animation: fadeIn 0.3s ease both;
+  }
+  .list-card:hover { transform: translateX(4px); }
+  .list-avatar {
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--navy), var(--sky));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; font-weight: 700; color: white;
+    flex-shrink: 0;
+    font-family: 'Playfair Display', serif;
+    overflow: hidden;
+  }
+  .list-avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .list-info { flex: 1; }
+  .list-name { font-size: 14px; font-weight: 600; color: var(--navy); }
+  .list-sub { font-size: 12px; color: var(--gray); margin-top: 2px; }
+  .list-badge {
+    font-size: 10px;
+    background: var(--light);
+    padding: 3px 8px;
+    border-radius: 10px;
+    color: var(--sky);
+    font-weight: 600;
+  }
+
+  /* MODAL */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 200;
+    backdrop-filter: blur(4px);
+    align-items: flex-end;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: white;
+    border-radius: 24px 24px 0 0;
+    width: 100%;
+    max-height: 92vh;
+    overflow-y: auto;
+    animation: slideUp 0.3s ease;
+  }
+  @keyframes slideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+  }
+  .modal-handle {
+    width: 40px; height: 4px;
+    background: #ddd;
+    border-radius: 2px;
+    margin: 12px auto 0;
+  }
+  .modal-hero {
+    background: linear-gradient(135deg, var(--navy), var(--sky));
+    padding: 30px 20px 40px;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  .modal-close {
+    position: absolute;
+    top: 16px; right: 16px;
+    background: rgba(255,255,255,0.2);
+    border: none;
+    color: white;
+    border-radius: 50%;
+    width: 32px; height: 32px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .modal-avatar {
+    width: 90px; height: 90px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    border: 3px solid var(--gold);
+    margin: 0 auto 12px;
+    font-size: 40px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    overflow: hidden;
+  }
+  .modal-avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .modal-name {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 4px;
+  }
+  .modal-roll {
+    font-size: 13px;
+    opacity: 0.8;
+    background: rgba(255,255,255,0.15);
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 20px;
+  }
+  .modal-body { padding: 20px 16px 30px; }
+
+  .info-section { margin-bottom: 20px; }
+  .info-section h3 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--gray);
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .info-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--light);
+  }
+  .info-row:last-child { border-bottom: none; }
+  .info-icon { font-size: 16px; width: 24px; text-align: center; flex-shrink: 0; margin-top: 1px; }
+  .info-label { font-size: 11px; color: var(--gray); }
+  .info-value { font-size: 14px; color: var(--navy); font-weight: 500; }
+
+  .smriti-box {
+    background: linear-gradient(135deg, #fff8e1, #fff3cd);
+    border-left: 4px solid var(--gold);
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 13px;
+    color: #5a4a1a;
+    line-height: 1.7;
+    font-style: italic;
+  }
+
+  .action-btns {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+  }
+  .action-btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: all 0.2s;
+  }
+  .action-btn.primary {
+    background: var(--navy);
+    color: white;
+  }
+  .action-btn.secondary {
+    background: var(--light);
+    color: var(--navy);
+  }
+  .action-btn:hover { opacity: 0.85; }
+
+  /* ADD/EDIT FORM */
+  .form-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 300;
+    backdrop-filter: blur(4px);
+    align-items: flex-end;
+  }
+  .form-overlay.open { display: flex; }
+  .form-sheet {
+    background: white;
+    border-radius: 24px 24px 0 0;
+    width: 100%;
+    max-height: 95vh;
+    overflow-y: auto;
+    animation: slideUp 0.3s ease;
+    padding: 20px 16px 40px;
+  }
+  .form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .form-header h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+  }
+  .form-group { margin-bottom: 14px; }
+  .form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gray);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 10px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 14px;
+    outline: none;
+    color: var(--navy);
+    transition: border-color 0.2s;
+    background: white;
+  }
+  .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+    border-color: var(--sky);
+  }
+  .form-group textarea { resize: vertical; min-height: 80px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, var(--navy), var(--blue));
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .submit-btn:hover { opacity: 0.9; }
+
+  /* BOTTOM NAV */
+  .bottom-nav {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: white;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    padding: 8px 0 16px;
+    z-index: 100;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+  }
+  .nav-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+    padding: 4px;
+    color: var(--gray);
+    font-size: 10px;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .nav-item.active { color: var(--navy); }
+  .nav-icon { font-size: 20px; }
+  .nav-item.add-btn .nav-icon {
+    background: var(--navy);
+    color: white;
+    border-radius: 50%;
+    width: 44px; height: 44px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+    margin-top: -16px;
+    box-shadow: 0 4px 16px rgba(15,39,68,0.3);
+  }
+
+  /* VIEW TOGGLE */
+  .view-toggle {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 8px;
+    gap: 6px;
+  }
+  .view-btn {
+    background: white;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--gray);
+    transition: all 0.2s;
+  }
+  .view-btn.active {
+    background: var(--navy);
+    color: white;
+    border-color: var(--navy);
+  }
+
+  /* LOADING */
+  .loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    color: var(--gray);
+    gap: 12px;
+  }
+  .spinner {
+    width: 40px; height: 40px;
+    border: 3px solid var(--light);
+    border-top-color: var(--navy);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* EMPTY STATE */
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--gray);
+  }
+  .empty-state div { font-size: 48px; margin-bottom: 12px; }
+
+  /* NOTICE BANNER */
+  .notice-banner {
+    background: linear-gradient(135deg, #fff8e1, #fff3cd);
+    border: 1px solid var(--gold);
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin: 12px 0;
+    font-size: 12px;
+    color: #7a5a00;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .notice-banner strong { display: block; margin-bottom: 2px; font-size: 13px; }
+
+  /* ABOUT PAGE */
+  .about-page {
+    display: none;
+    padding: 16px 0 80px;
+  }
+  .about-card {
+    background: white;
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 12px;
+    box-shadow: var(--card-shadow);
+  }
+  .about-card h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .about-card p, .about-card li {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.7;
+  }
+  .about-card ul { padding-left: 16px; }
+  .about-card li { margin-bottom: 4px; }
+
+  /* SHARE SECTION */
+  .share-card {
+    background: linear-gradient(135deg, var(--navy), var(--sky));
+    color: white;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .share-card h3 { font-size: 16px; margin-bottom: 6px; }
+  .share-card p { font-size: 12px; opacity: 0.8; margin-bottom: 14px; }
+  .share-url {
+    background: rgba(255,255,255,0.15);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 12px;
+    font-family: monospace;
+    margin-bottom: 12px;
+    word-break: break-all;
+  }
+  .share-btn {
+    background: var(--gold);
+    color: var(--navy);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  /* RESULT BADGE COLOR */
+  .badge-a { background: #d1fae5; color: #065f46; }
+  .badge-b { background: #dbeafe; color: #1e40af; }
+  .badge-o { background: #fef3c7; color: #92400e; }
+
+  .result-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 4px;
+  }
+
+  @media (min-width: 480px) {
+    .alumni-grid { grid-template-columns: 1fr 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <div class="logo-area">
+      <img src="data:image/png;base64,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" alt="JnU Logo" style="width:42px;height:42px;object-fit:contain;border-radius:4px;">
+      <div class="logo-text">
+        <h1>স্মৃতির পাতায়</h1>
+        <p>সমাজকর্ম বিভাগ • ৬ষ্ঠ ব্যাচ • জবি</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="btn-icon" onclick="toggleView()" title="ভিউ পরিবর্তন">⊞</button>
+      <button class="btn-icon" onclick="shareApp()" title="শেয়ার করুন">📤</button>
+    </div>
+  </div>
+  <div class="search-bar">
+    <div class="search-input-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="নাম, রোল, জেলা দিয়ে খুঁজুন..." oninput="filterAlumni()">
+    </div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main id="mainContent">
+
+  <!-- ALUMNI TAB -->
+  <div id="alumniPage">
+    <div class="stats-bar" id="filterChips">
+      <div class="stat-chip active" onclick="filterByDistrict('all', this)">🎓 সবাই (<span id="totalCount">40</span>)</div>
+      <div class="stat-chip" onclick="filterByDistrict('ঢাকা', this)">📍 ঢাকা</div>
+      <div class="stat-chip" onclick="filterByDistrict('যশোর', this)">📍 যশোর</div>
+      <div class="stat-chip" onclick="filterByDistrict('কুষ্টিয়া', this)">📍 কুষ্টিয়া</div>
+      <div class="stat-chip" onclick="filterByDistrict('বরিশাল', this)">📍 বরিশাল</div>
+      <div class="stat-chip" onclick="filterByDistrict('চাঁদপুর', this)">📍 চাঁদপুর</div>
+    </div>
+
+    <div class="notice-banner" id="noticeBanner">
+      <span>⚠️</span>
+      <div>
+        <strong>ডেমো মোড চলছে</strong>
+        Google Sheets সংযুক্ত করলে রিয়েল-টাইম ডেটা দেখাবে। নিচের "গাইড" ট্যাবে দেখুন।
+      </div>
+    </div>
+
+    <div class="tabs">
+      <div class="tab active" onclick="switchTab('grid')">⊞ গ্রিড</div>
+      <div class="tab" onclick="switchTab('list')">☰ তালিকা</div>
+    </div>
+
+    <div id="loadingState" class="loading">
+      <div class="spinner"></div>
+      <div>লোড হচ্ছে...</div>
+    </div>
+
+    <div id="alumniGrid" class="alumni-grid" style="display:none;"></div>
+    <div id="alumniListView" class="alumni-list"></div>
+
+    <div id="emptyState" class="empty-state" style="display:none;">
+      <div>🔍</div>
+      <p>কোনো ফলাফল পাওয়া যায়নি</p>
+    </div>
+  </div>
+
+  <!-- ABOUT PAGE -->
+  <div class="about-page" id="aboutPage">
+    <div class="share-card">
+      <h3>📱 অ্যাপ শেয়ার করুন</h3>
+      <p>এই লিংক সবার সাথে শেয়ার করুন</p>
+      <div class="share-url" id="shareUrlDisplay">লিংক লোড হচ্ছে...</div>
+      <button class="share-btn" onclick="shareApp()">🔗 শেয়ার করুন</button>
+    </div>
+
+    <div class="about-card">
+      <h3>📖 অ্যাপ সম্পর্কে</h3>
+      <p>জগন্নাথ বিশ্ববিদ্যালয় সমাজকর্ম বিভাগের ৬ষ্ঠ ব্যাচের (শিক্ষাবর্ষ ২০১৪-১৫) অ্যালামনাই ডিরেক্টরি। সবাই নিজের তথ্য আপডেট রাখতে পারবেন।</p>
+    </div>
+
+    <div class="about-card">
+      <h3>⚡ Google Sheets সংযোগ গাইড</h3>
+      <ul>
+        <li>১. <strong>Google Sheets</strong> খুলুন → নতুন sheet তৈরি করুন</li>
+        <li>২. প্রথম row-তে হেডার দিন: name, roll, mobile, email, father, district, job, institution, photo, facebook, smriti, result</li>
+        <li>৩. <strong>Extensions → Apps Script</strong> → নতুন script তৈরি করুন</li>
+        <li>৪. doGet() ফাংশন দিয়ে JSON API বানান</li>
+        <li>৫. Deploy → Web App → Anyone can access</li>
+        <li>৬. URL কপি করে নিচে SHEET_URL এ বসান</li>
+      </ul>
+    </div>
+
+    <div class="about-card">
+      <h3>✏️ তথ্য যোগ করার নিয়ম</h3>
+      <ul>
+        <li>নিচের <strong>+ বোতাম</strong> চাপুন</li>
+        <li>ফর্ম পূরণ করুন ও সাবমিট করুন</li>
+        <li>Google Sheets এ সরাসরি যোগ হবে</li>
+        <li>সবাই রিয়েল-টাইমে দেখতে পাবে</li>
+      </ul>
+    </div>
+
+    <div class="about-card">
+      <h3>📞 সম্পাদক</h3>
+      <p>নূর মোহাম্মদ স্বপন<br>রোল: এম-১৪০৮০৩০৫৭<br>সমাজকর্ম বিভাগ, জবি</p>
+    </div>
+  </div>
+
+</main>
+
+<!-- BOTTOM NAV -->
+<div class="bottom-nav">
+  <div class="nav-item active" id="navAlumni" onclick="showPage('alumni')">
+    <div class="nav-icon">👥</div>
+    <span>অ্যালামনাই</span>
+  </div>
+  <div class="nav-item add-btn" onclick="openAddForm()">
+    <div class="nav-icon">＋</div>
+    <span>যোগ করুন</span>
+  </div>
+  <div class="nav-item" id="navAbout" onclick="showPage('about')">
+    <div class="nav-icon">ℹ️</div>
+    <span>গাইড</span>
+  </div>
+</div>
+
+<!-- DETAIL MODAL -->
+<div class="modal-overlay" id="detailModal" onclick="closeModal(event)">
+  <div class="modal">
+    <div class="modal-handle"></div>
+    <div class="modal-hero">
+      <button class="modal-close" onclick="closeDetailModal()">✕</button>
+      <div class="modal-avatar" id="modalAvatar"></div>
+      <div class="modal-name" id="modalName"></div>
+      <div class="modal-roll" id="modalRoll"></div>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<!-- ADD FORM -->
+<div class="form-overlay" id="addFormOverlay" onclick="closeFormOverlay(event)">
+  <div class="form-sheet">
+    <div class="form-header">
+      <h2>✏️ তথ্য যোগ/আপডেট করুন</h2>
+      <button class="modal-close" style="position:static;background:#f3f4f6;color:#374151;" onclick="closeAddForm()">✕</button>
+    </div>
+    <div id="formMessage" style="display:none;" class="notice-banner"></div>
+    <form id="alumniForm" onsubmit="submitForm(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label>নাম *</label>
+          <input type="text" id="fName" placeholder="পূর্ণ নাম" required>
+        </div>
+        <div class="form-group">
+          <label>রোল নম্বর *</label>
+          <input type="text" id="fRoll" placeholder="এম-১৪০৮০৩০XX" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>মোবাইল</label>
+          <input type="tel" id="fMobile" placeholder="01XXXXXXXXX">
+        </div>
+        <div class="form-group">
+          <label>ইমেইল</label>
+          <input type="email" id="fEmail" placeholder="email@gmail.com">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>পিতার নাম</label>
+          <input type="text" id="fFather" placeholder="পিতার নাম">
+        </div>
+        <div class="form-group">
+          <label>জেলা</label>
+          <input type="text" id="fDistrict" placeholder="জেলা">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>বর্তমান পেশা</label>
+          <input type="text" id="fJob" placeholder="চাকরি/ব্যবসা">
+        </div>
+        <div class="form-group">
+          <label>প্রতিষ্ঠান</label>
+          <input type="text" id="fInstitution" placeholder="কর্মস্থল">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>🏢 বর্তমান কর্মস্থল</label>
+        <input type="text" id="fWorkplace" placeholder="যেমন: ব্র্যাক, সিটি ব্যাংক, প্রাথমিক বিদ্যালয়...">
+      </div>
+      <div class="form-group">
+        <label>ফেসবুক প্রোফাইল লিংক</label>
+        <input type="url" id="fFacebook" placeholder="https://facebook.com/...">
+      </div>
+      <div class="form-group">
+        <label>ছবির লিংক (Google Drive/Imgur)</label>
+        <input type="url" id="fPhoto" placeholder="https://...">
+      </div>
+      <div class="form-group">
+        <label>স্মৃতিকথা / বার্তা</label>
+        <textarea id="fSmriti" placeholder="বিশ্ববিদ্যালয় জীবনের স্মৃতি বা বন্ধুদের উদ্দেশ্যে কিছু কথা লিখুন..."></textarea>
+      </div>
+      <div class="form-group">
+        <label>রেজাল্ট</label>
+        <select id="fResult">
+          <option value="">বলতে চাই না</option>
+          <option value="A+">A+</option>
+          <option value="A">A</option>
+          <option value="A-">A-</option>
+          <option value="AB+">AB+</option>
+          <option value="B+">B+</option>
+          <option value="B">B</option>
+          <option value="O+">O+</option>
+          <option value="O">O</option>
+          <option value="O-">O-</option>
+        </select>
+      </div>
+      <button type="submit" class="submit-btn" id="submitBtn">
+        💾 সাবমিট করুন
+      </button>
+    </form>
+  </div>
+</div>
+
+<script>
+// ============================================================
+// CONFIG — Google Sheets Web App URL এখানে বসান
+// ============================================================
+const SHEET_ID = '1FK-AbTwqh7WzJtZlL99CvdsAr_2y3Twh5sO2udGLzmw';
+const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=Sheet1`;
+const USE_DEMO = false;
+
+// ============================================================
+// DEMO DATA (PDF থেকে নেওয়া)
+// ============================================================
+const DEMO_DATA = [
+  { name: 'নূর মোহাম্মদ স্বপন', roll: 'এম-১৪০৮০৩০৫৭', mobile: '', email: 'snmohammad16@gmail.com', father: 'মোঃ গনির উদ্দিন', district: 'কুড়িগ্রাম', job: 'সম্পাদক, স্মরণিকা', institution: 'জগন্নাথ বিশ্ববিদ্যালয়', photo: '', facebook: '', smriti: 'জীবনে আমার অনেক স্বপ্ন ছিল যা কখনো পূরণ করা সম্ভব ছিলনা। কিন্তু আল্লাহর অশেষ রহমত আমাকে জগন্নাথ বিশ্ববিদ্যালয়ে ভর্তি হয়ে ঐ স্বপ্নগুলো পূরণ করার মতো সুযোগ করে দিয়েছেন।', result: 'O+' },
+  { name: 'মোঃ ইয়াসির আরাফাত', roll: 'এম-১৪০৮০৩০১৪', mobile: '', email: 'yasirarafat321@gmail.com', father: 'আব্দুস সাত্তার', district: 'যশোর', job: '', institution: '', photo: '', facebook: '', smriti: 'জীবনের শেষ মিডটার্ম দিলাম আজ। কিছু অর্জনের মধ্য দিয়েও মনে হচ্ছে সবাইকে আড়াল করে চোখের কোনায় পানি জমা হওয়ার মত কিছু হারালাম আজই।', result: 'O+' },
+  { name: 'মোঃ আতিকুর রহমান', roll: 'এম-১৪০৮০৩০৪৪', mobile: '01730-777898', email: 'atikuratik1992@gmail.com', father: 'মোঃ আব্দুল কাদের', district: 'মানিকগঞ্জ', job: '', institution: '', photo: '', facebook: '', smriti: 'নিঃসন্দেহে শিক্ষাজীবনের সবচেয়ে বেশী সময় অতিবাহিত হয়েছে এই বিশ্ববিদ্যালয়ে।', result: 'O+' },
+  { name: 'পবিত্র চন্দ্র হাওলাদার', roll: 'এম-১৪০৮০৩০৫৯', mobile: '01950-98948669', email: 'chpabitro@gmail.com', father: 'বিপুল চন্দ্র হাওলাদার', district: 'পটুয়াখালী', job: '', institution: '', photo: '', facebook: '', smriti: 'জগন্নাথ বিশ্ববিদ্যালয়ের সমাজকর্ম বিভাগ থেকে আমার শিক্ষা জীবন শেষ করা আমার সুখ স্মৃতিগুলোর মধ্যে একটি।', result: 'AB+' },
+  { name: 'নাগিস আক্তার', roll: 'এম-১৪০৮০৩০০১', mobile: '01993-698693', email: 'nargissw03@gmail.com', father: 'আব্দুল ওয়াহাব', district: 'শেরপুর', job: '', institution: '', photo: '', facebook: '', smriti: 'মরুভূমিতে মরুচারীরা যেমন পানির জন্য ছুটফুট করে, তেমনি বিশ্ববিদ্যালয়ের নতুন পরিবেশে এসে আমিও ছুটাছুটি করছিলাম।', result: 'O+' },
+  { name: 'মোঃ আলিম মিয়া', roll: 'এম-১৪০৮০৩০০২', mobile: '01992600060', email: 'alimmia91@gmail.com', father: 'মোঃ কালু মিয়া', district: 'রাজবাড়ি', job: '', institution: '', photo: '', facebook: '', smriti: 'ভালোবাসা এমন যে কখন মানুষ তাতে জড়িয়ে কেউ বলতে পারে না। আমাদের ক্যাম্পাসের প্রতিটি বন্ধুর ক্ষেত্রেই এই কথাটা সত্য।', result: 'O+' },
+  { name: 'মোঃ আজিজুর রহমান', roll: 'এম-১৪০৮০৩০০৩', mobile: '01793977408', email: 'arionjnu@gmail.com', father: 'আব্দুর রাজ্জাক মৃধা', district: 'ফরিদপুর', job: '', institution: '', photo: '', facebook: '', smriti: 'আমি জবি সমাজকর্ম বিভাগে By chance পড়িনি। By choice এ সমাজকর্মে পড়েছি।', result: 'B+' },
+  { name: 'মোঃ তারিক আজিজ', roll: 'এম-১৪০৮০৩০০৪', mobile: '01929706567', email: 'mdtarika2i21992@gmail.com', father: 'মোঃ করিম শেখ', district: 'কুষ্টিয়া', job: '', institution: '', photo: '', facebook: '', smriti: 'মহান আল্লাহকে স্মরণ করে আরম্ভ করছি; মানুষকেই আসলে বড় হয়? আসলে তার নিনিক্ত সমস্ত কর্মই তাকে ছোট হতে থাকে পিছু শারীরিকভাবে বড় দেখায়।', result: 'O+' },
+  { name: 'মোঃ আশরাফুল ইসলাম', roll: 'এম-১৪০৮০৩০৪০', mobile: '01998-374455-68', email: 'ashrafjnu@gmail.com', father: 'মোঃ মোয়াজ্জেম হোসেন', district: 'সিরাজগঞ্জ', job: '', institution: '', photo: '', facebook: '', smriti: 'একরাশ স্বপ্ন আর সাধনার বাস্তবায়ন শুরু হয় বিশ্ববিদ্যালয়ের জবি এর সমাজকর্ম বিভাগের মাধ্যমে।', result: 'B+' },
+  { name: 'মার্জিয়া সুলতানা', roll: 'এম-১৪০৮০৩০০৬', mobile: '01998-958787', email: 'saifcs84@gmail.com', father: 'মোঃ মোয়াজ্জেম হোসেন খান', district: 'ময়মনসিংহ', job: '', institution: '', photo: '', facebook: '', smriti: 'সমাজকর্মী হিসেবে দেশ ও জাতির কল্যাণে প্রতিটি ভূমিকা হোক অগ্রগণ্য।', result: 'B+' },
+  { name: 'মোঃ মনিকুজ্জামান (তুহিন)', roll: 'এম-১৪০৮০৩০০৭', mobile: '01979-9408007', email: 'mdmoniruzzamantuhin@gmail.com', father: 'মোঃ আবু হানিফ', district: 'পটুয়াখালী', job: '', institution: '', photo: '', facebook: '', smriti: 'আকাশতো ছুঁইনি কিন্তু আকাশের মাঝে তো মেঘ হয়ে বেঁচে আছি, দিব্যি জেগে আছি।', result: 'B-' },
+  { name: 'মহানন্দ সরকার', roll: 'এম-১৪০৮০৩০০৮', mobile: '01786-329600', email: 'sarkarmahananda6030@gmail.com', father: 'সন্ন্যাসী সরকার', district: 'সাতচিরা', job: '', institution: '', photo: '', facebook: '', smriti: 'সময় চলে যায় আর কথা রয়ে যায়, হৃদপিণ্ডের পাতায় পাতায় দিন রাত্রির স্বপ্ন মেলায়।', result: 'O+' },
+  { name: 'আব্দুল্লাহ আল মুমিন', roll: 'এম-১৪০৮০৩০৩৬', mobile: '01999-650037', email: 'soheljnu64@gmail.com', father: 'আবুল হোসাইন', district: 'ঢাকা', job: '', institution: '', photo: '', facebook: '', smriti: '২০১১ থেকে ২০১৭ সাল পর্যন্ত বিশ্ববিদ্যালয়ের জীবন অত্যন্ত আনন্দঘন মুহূর্তে কেটেছে।', result: 'B+' },
+  { name: 'সামিরা সিয়াস স্বর্ণা', roll: 'এম-১৪০৮০৩০৪৭', mobile: '01970-6000703', email: 'samirasias93@gmail.com', father: 'মোঃ সিয়াস উদ্দিন চৌধুরী', district: 'গোপালগঞ্জ', job: '', institution: '', photo: '', facebook: '', smriti: 'জীবনে চলার প্রতিটি ক্ষেত্রে ভাল মন্দ থাকে। যেহেতু ভাল মন্দ নিয়েই জীবন আমার বিশ্ববিদ্যালয় জীবন তেমনি ভাবে কেটেছে।', result: 'A+' },
+  { name: 'সামিয়া ইসলাম কুশি', roll: 'এম-১৪০৮০৩০৪৯', mobile: '01967-698079', email: 'sabnamsamia93@gmail.com', father: 'মোঃ রফিকুল ইসলাম', district: 'সিরাজগঞ্জ', job: '', institution: '', photo: '', facebook: '', smriti: 'শিক্ষা জীবনের সবচেয়ে বেশি সময় পার করেছি তোদের সাথে। তাই তোদের সাথে স্মৃতিপটগুলোও একটু বেশি।', result: 'O+' },
+  { name: 'ফয়সাল মাহমুদ', roll: 'এম-১৪০৮০৩০০৫', mobile: '01627-038640', email: 'faysalmahmodjnu2010@gmail.com', father: 'মোঃ মনির উল্লাহ', district: 'লক্ষ্মীপুর', job: '', institution: '', photo: '', facebook: '', smriti: 'হাজারো প্রত্যাশার চেয়ে প্রাপ্তি অনেক। আর এ প্রাপ্তির মধ্যে সবচেয়ে বড় প্রাপ্তি হল তোদের পাওয়া। এই প্রাপ্তিটা যেন আজীবন স্মরণীয় হয়।', result: 'B+' },
+  { name: 'মোঃ সাইফুল ইসলাম', roll: 'এম-১৪০৮০৩০৩৩', mobile: '01978-976855', email: 'saifuljnusw@gmail.com', father: 'মোঃ আব্দুস সুবাহান হাওলাদার', district: 'বরিশাল', job: '', institution: '', photo: '', facebook: '', smriti: 'চলার পথে, ডিভের মাঝে, একটু খানি দেখা এবহই সাথে মনে রাখিস আমাদের এ ছোট্টু স্মৃতি রেখা।', result: 'A+' },
+  { name: 'আরিফুর রহমান', roll: 'এম-১৪০৮০৩০৪২', mobile: '01820-598660', email: 'arifur.rahamman1992@gmail.com', father: 'ছানা উল্লাহ', district: 'কুমিল্লা', job: '', institution: '', photo: '', facebook: '', smriti: 'জীবনের সবচাইতে গুরুত্বপূর্ণ সময় ছিল ভার্সিটি লাইফের এই ছয়টি বছর।', result: 'A+' },
+  { name: 'মোহাম্মদ ইমরান হোসাইন', roll: 'এম-১৪০৮০৩০৪৩', mobile: '01668-956628', email: 'sumon7130@gmail.com', father: 'মোহাম্মদ আবুল কালাম', district: 'চাঁদপুর', job: '', institution: '', photo: '', facebook: '', smriti: 'বিশ্ববিদ্যালয় জীবনের প্রতিটি দিন আমার কাছে স্বপ্নের প্রেমে বাঁধিয়ে রাখার মত ছিল।', result: 'O+' },
+  { name: 'সুরাইয়া রুহানি', roll: 'এম-১৪০৮০৩০০৪', mobile: '01948-199187', email: 'suraiyaruhani@gmail.com', father: 'মৃত হাফিজুর রহমান', district: 'বগুড়া', job: '', institution: '', photo: '', facebook: '', smriti: '', result: 'A+' },
+  { name: 'মোঃ মনিকুজ্জামান', roll: 'এম-১৪০৮০৩০৩১', mobile: '01929-178039', email: 'monirm1992@yahoo.com', father: 'মোঃ মজিবুর রহমান', district: 'জামালপুর', job: '', institution: '', photo: '', facebook: '', smriti: 'উচ্চ শিক্ষায় দর্পণ করার পরে অর্থাৎ ২০১১ সাল হতে ২০১৭ সালের মার্চ পর্যন্ত অনেক স্মৃতি জড়িয়ে আছে আমার জীবনের সাথে।', result: 'AB+' },
+  { name: 'মোঃ শরিফুল ইসলাম', roll: 'এম-১৪০৮০৩০৩৮', mobile: '01970-077994', email: 'sharifjnu11@gmail.com', father: 'মোঃ আব্দুল্লাহ সরদার', district: 'নাটোর', job: '', institution: '', photo: '', facebook: '', smriti: 'শেষমুহূর্তের অনুভূতিতে শুধু অতিতের ভালোবাসা স্মৃতি। বিদায়ের সময় বন্ধুদের বন্ধনময় স্মৃতিগুলো রোমাঞ্চন করে গিয়ে মন কাঁদছে।', result: 'B+' },
+  { name: 'জাহিদুল হক ভুইয়া', roll: 'এম-১৪০৮০৩০৫০', mobile: '01554-269264', email: '', father: 'মোঃ জহিরুল হক ভুইয়া', district: 'কুমিল্লা', job: '', institution: '', photo: '', facebook: '', smriti: 'প্রথম প্রথম আমি পরীক্ষা ছাড়া ক্লাসে যেতাম না। শুধুমাত্র যেদিন পরীক্ষা থাকত সেদিন আসতাম।', result: 'B+' },
+  { name: 'মোঃ আব্দুল আজিজ', roll: 'এম-১৪০৮০৩০২৫', mobile: '01799-00229', email: 'fahimazizjnu93@gmail.com', father: 'মোঃ আব্দুর রব', district: 'পুঠিয়ামালী', job: '', institution: '', photo: '', facebook: '', smriti: 'সত্যিকথা বলতে গেলে কি, বিশ্ববিদ্যালয় জীবনের প্রতিটি মুহূর্তই এক একটি স্মৃতি হয়ে আছে।', result: 'A+' },
+  { name: 'মাকসুদা আক্তার', roll: 'এম-১৪০৮০৩০৪১', mobile: '01976-369795', email: 'maksudaifti91@gmail.com', father: 'মোঃ ইব্রাহিম', district: 'ঢাকা', job: '', institution: '', photo: '', facebook: '', smriti: 'বন্ধুরা তোরা ছিলি, তোরা আছিস। তোরা সর্বদাই থাকবি, আমার এ মনে।', result: 'B+' },
+  { name: 'হরে কৃষ্ণ বর্মন', roll: 'এম-১৪০৮০৩০২৩', mobile: '01723-606762', email: 'krisnajnu@gmail.com', father: 'বীকেন্দ্রনাথ বর্মন', district: 'লালমনিরহাট', job: '', institution: '', photo: '', facebook: '', smriti: '', result: 'AB+' },
+  { name: 'সুমাইয়া পারভিন', roll: 'এম-১৪০৮০৩০৪৫', mobile: '01948-700635', email: '', father: 'মোঃ হাসান আলী শেখ', district: 'যশোর', job: '', institution: '', photo: '', facebook: '', smriti: 'বন্ধু হল বৃক্ষের মতো, বৃক্ষ আমাদের যেমন আগলে রাখে বন্ধুরাও তেমনি পাশে থাকে।', result: 'O+' },
+  { name: 'আবদুল্লাহ আল মুস্তাকিম (লিমন)', roll: 'এম-১৪০৮০৩০২২', mobile: '01793-040748', email: 'lemon.jnu11@gmail.com', father: 'মোঃ মোস্তাফিজার রহমান', district: 'নীলফামারি', job: '', institution: '', photo: '', facebook: '', smriti: '', result: 'AB+' },
+  { name: 'শারাবান সহিদ শিরু', roll: 'এম-১৪০৮০৩০১৫', mobile: '01990-6008759', email: 'sharabanshirud6494@gmail.com', father: 'গাজী শহীদুল ইসলাম', district: 'খুলনা', job: '', institution: '', photo: '', facebook: '', smriti: 'পাওয়া না পাওয়ার মিছিলে আজও স্মৃতির পাতায় জুল জুল করছে যতগুলো যা ভাবি ভুলে যাব মনও মানে না।', result: 'B+' },
+  { name: 'মাহবুবা ইয়াসমিন (মিষ্টি)', roll: 'এম-১৪০৮০৩০১৯', mobile: '01996-707260', email: 'mdtarika2i21992@gmail.com', father: 'শেখ আব্দুর রহিম', district: 'খুলনা', job: '', institution: '', photo: '', facebook: '', smriti: 'মানুষের পুরো জীবনটা হচ্ছে একটা সরল অংক। যতই দিন যাচ্ছে, ততই আমরা তার সমাধানে যাচ্ছি।', result: 'B+' },
+  { name: 'তপতী বোস', roll: 'এম-১৪০৮০৩০৬৪', mobile: '01970-5560716', email: 'b.tapoti208@gmail.com', father: 'লক্ষ্মণ কুমার বোস', district: 'যশোর', job: '', institution: '', photo: '', facebook: '', smriti: 'পরামর্শ ও বাঁশময় লাইফ। একই সাথে জীবনের সবচেয়ে আনন্দঘন মুহূর্তগুলো এখানে কাটিয়েছি।', result: 'B+' },
+  { name: 'কানিজ ফাতেমা খান', roll: 'এম-১৪০৮০৩০৬৩', mobile: '01970-693377', email: 'kanismonika11@gmail.com', father: 'মোহাম্মদ খান', district: 'গোপালগঞ্জ', job: '', institution: '', photo: '', facebook: '', smriti: 'সুখে দুঃখে আমরা ছিলাম। এ স্মৃতি ভোলার নয়। যতদিন যাবে, যত বছর যাবে, প্রিয় ক্যাম্পাসের স্মৃতি রয়ে যাবে।', result: 'B+' },
+  { name: 'কাজী শিমু আক্তার', roll: 'এম-১৪০৮০৩০৩৫', mobile: '01999-296598', email: 'kazishimu.jnu@gmail.com', father: 'কাজী সিরাজুল ইসলাম', district: 'কুমিল্লা', job: '', institution: '', photo: '', facebook: '', smriti: '', result: 'O+' },
+  { name: 'সৈয়দ আহমদ রাজু', roll: 'বিএসএস-১১৩০২৪', mobile: '01949-082477', email: 'sayeadahmedrazu@gmail.com', father: 'বেলায়েত হোসেন', district: 'লক্ষ্মীপুর', job: '', institution: '', photo: '', facebook: '', smriti: 'প্যারাময় ও বাঁশময় লাইফ। একই সাথে জীবনের সবচেয়ে আনন্দঘন মুহূর্তগুলো এখানে কাটিয়েছি।', result: 'AB+' },
+  { name: 'আলহাজ মাহমুদ শিপলু', roll: 'বিএসএস-১১৩০৭০', mobile: '01927-001776', email: 'shikderalhaz1775@mail.com', father: 'মোঃ ইয়াছিন আলি', district: 'টাঙ্গাইল', job: '', institution: '', photo: '', facebook: '', smriti: 'আমি জানি তোদের সাথে একসাথে বসে আর ক্লাস করা হবেনা। তবুও বলি তোরা ছিলি, তোরা আছিস, তোরাই থাকবি।', result: 'O+' },
+  { name: 'নাভিদ আঞ্জুমান', roll: 'এম-১৪০৮০৩০৫৮', mobile: '01703-258075', email: 'navid21anjum@gmail.com', father: 'মোঃ আব্দুস সালাম', district: 'হুয়াডাঙ্গা', job: '', institution: '', photo: '', facebook: '', smriti: '', result: 'O+' },
+  { name: 'লুবাজা রহমান খান', roll: 'এম-১৪০৮০৩০২৯', mobile: '01558-969999', email: 'lobaja.sw.jnu@gmail.com', father: 'মোঃ মোয়াজ্জেদুর রহমান খান', district: 'নেত্রকোনা', job: '', institution: '', photo: '', facebook: '', smriti: '', result: 'AB+' },
+  { name: 'নাঈম মাহমুদ', roll: 'এম-১৪০৮০৩০৪৮', mobile: '01703-688230', email: '', father: 'মোঃ মকবুল হোসেন', district: 'বরিশাল', job: '', institution: '', photo: '', facebook: '', smriti: '', result: 'O+' },
+  { name: 'কানিজ সাইরা লাবনী', roll: 'এম-১৪০৮০৩০৫৩', mobile: '01962-430970', email: 'kaniz_laboni@yahoo.com', father: 'সাঈদ আমির আলী', district: 'চাঁদপুর', job: '', institution: '', photo: '', facebook: '', smriti: '', result: 'O+' },
+  { name: 'দীতি আনোয়ার', roll: 'এম-১৪০৮০৩০৪৬', mobile: '01978-418669', email: 'maya.sadiatab@gmail.com', father: 'আনোয়ার হাসান', district: 'ঢাকা', job: '', institution: '', photo: '', facebook: '', smriti: '', result: 'A+' },
+
+  // --- বাকি সদস্যরা ---
+  { name: 'মোঃ আরিফ হোসেন', roll: 'এম-১৪০৮০৩০২৮', mobile: '01992-683000', email: 'mdrourob@gmail.com', father: 'মুহাম্মদ আলমগীর হোসেন', district: 'ঝিনাইদহ', job: '', institution: '', photo: '', facebook: '', smriti: '', result: 'O+' },
+  { name: 'মোঃ মাজহারুল ইসলাম', roll: 'এম-১৪০৮০৩০৩০', mobile: '01994-799261', email: 'mdmazharuli26@yahoo.com', father: 'মোঃ তৈয়দুর রহমান', district: 'চাঁদপুর', job: '', institution: '', photo: '', facebook: '', smriti: 'পরম আল্লাহর কাছে অশেষ শুকরিয়া।', result: 'B+' },
+  { name: 'মোঃ ইয়াছিন আমির', roll: 'এম-১৪০৮০৩০৩৭', mobile: '01929-070829', email: 'yeasinabid54@gmail.com', father: 'মোঃ বশির উদ্দিন', district: 'চাঁদপুর', job: '', institution: '', photo: '', facebook: '', smriti: '', result: 'A+' },
+  { name: 'মোঃ মহিবুর রুলাহ', roll: 'এম-১৪০৮০৩০০৯', mobile: '01930-782327', email: '', father: 'মোঃ আমিনুল হক', district: 'বরপনা', job: '', institution: '', photo: '', facebook: '', smriti: 'দেখা হবে বিজয়ে। মেনর মত কোন একজনকে পেলাম না। অনাহারে ছিলাম।', result: 'O+' },
+  { name: 'সাদ বিন জাফর', roll: 'এম-১৪০৮০৩০১৬', mobile: '01954-008033', email: 'sadbinzafor90@gmail.com', father: 'আবু জাফর', district: 'কুষ্টিয়া', job: '', institution: '', photo: '', facebook: '', smriti: '', result: 'B+' },
+  { name: 'ফাহাদ হাসান', roll: 'এম-১৪০৮০৩০৬১', mobile: '01562-368302', email: 'fahadhassanpiash@gmail.com', father: 'মোঃ হাসান মোল্লা', district: 'নারায়ণগঞ্জ', job: '', institution: '', photo: '', facebook: '', smriti: '', result: 'B+' },
+  { name: 'মিথুন তালুকদার', roll: 'এম-১৪০৮০৩০১৩', mobile: '01645-600639', email: 'mithunjnubd@gmail.com', father: 'মার্লিক তালুকদার', district: 'সুনামগঞ্জ', job: '', institution: '', photo: '', facebook: '', smriti: '', result: 'B+' },
+  { name: 'মোঃ নুরুন্নবী গাজী', roll: 'এম-১৪০৮০৩০৫৬', mobile: '01999-708508', email: '', father: 'মোঃ হযরত আলী গাজী', district: 'সাতক্ষীরা', job: '', institution: '', photo: '', facebook: '', smriti: 'জীবনে অনেক পেয়েছি যা কখনো ভুলবার নয়।', result: 'O+' },
+  { name: 'আসিফ মাহমুদ', roll: 'এম-১৪০৮০৩০১৭', mobile: '01810-077697', email: '', father: '', district: 'নোয়াখালী', job: '', institution: '', photo: '', facebook: '', smriti: '', result: 'O+' },
+  { name: 'রোকসানা গ্রামানিক রশ্মি', roll: 'এম-১৪০৮০৩০২৪', mobile: '01900-660130', email: '', father: 'হাবিবুর রহমান গ্রামানিক', district: 'গাইবান্ধা', job: '', institution: '', photo: '', facebook: '', smriti: '', result: 'B+' },
+  { name: 'মোঃ তারিক হাসান', roll: 'এম-১৪০৮০৩০১০', mobile: '01998-368082', email: 'areqhassan76@gmail.com', father: 'মৃত আঃ হাই বিশ্বাস', district: 'নড়াইল', job: '', institution: '', photo: '', facebook: '', smriti: '', result: 'O+' },
+  { name: 'তাহমিনা সুলতানা তানিয়া', roll: 'এম-১৪০৮০৩০৩৯', mobile: '01625-900796', email: 'tania_57jnu@yahoo.com', father: 'মোহাম্মদ তাহের আলি', district: 'ঢাকা', job: '', institution: '', photo: '', facebook: '', smriti: '', result: 'B+' },
+  { name: 'মনির হোসেন', roll: 'এম-১৪০৮০৩০১১', mobile: '01999-630660', email: '', father: 'জাফর আলী বিশ্বাস', district: 'যাজবাড়ি', job: '', institution: '', photo: '', facebook: '', smriti: '', result: 'O+' },
+  { name: 'তোফাজ্জুল হোসেন', roll: 'এম-১৪০৮০৩০৩২', mobile: '01652-260389', email: 'saifuljnusw@gmail.com', father: 'সোহরাব হোসেন', district: 'নেত্রকোনা', job: '', institution: '', photo: '', facebook: '', smriti: '', result: 'A+' },
+  { name: 'বিসান রেজা মোঃ সাহেদ', roll: 'এম-১৪০৮০৩০৬২', mobile: '01722-670892', email: 'risanhp212@gmail.com', father: 'মোঃ ইনতাজ আলি', district: 'রাজশাহী', job: '', institution: '', photo: '', facebook: '', smriti: 'যখন শুরু করেছিলাম তখন ভাবিনি এত দূত হবে। আজ হয়তো আমরা শারীরিকভাবে বিচ্ছিন্ন কিন্তু মানসিক যে টান তা থেকে বের হয়ে আসার অভিপ্রায় আমার নেই।', result: 'B+' },
+  { name: 'মোঃ সিফাতুল হক শোভন', roll: 'এম-১৪০৮০৩০৬৩', mobile: '01907-026366', email: 'shifatshovon@mail.com', father: 'মোঃ সিরাজুল হক', district: 'নেত্রকোনা', job: '', institution: '', photo: '', facebook: '', smriti: 'জীবনের পথে সামনে চলতে গেলে পিছনের অনেক কথাই মনে পড়ে যায়। কিছু কথা মনে পড়লে মাঝে মাঝে বালিশে মুখ গুঁজি লক্ষ্য করি। আর কিছু কথা আমাদের চোখের কোনে পানি নিয়ে আসে।', result: 'A+' },
+  { name: 'মুহাম্মদ কবেল বিশ্বাস', roll: 'এম-১৪০৮০৩০৫২', mobile: '01930-093449', email: 'rubelmohammad79@gmail.com', father: 'মুহাম্মদ জলিল বিশ্বাস', district: 'মানিকগঞ্জ', job: '', institution: '', photo: '', facebook: '', smriti: 'ভালোবাসা ভালোবাসে শুধু যে তাকে, ভালোবেসে ভালোবাসায় বেঁধে যে রাখে।', result: 'B+' },
+  { name: 'শামীমা ইয়াসমিন শীলা', roll: 'এম-১৪০৮০৩০২৬', mobile: '01998-604799', email: 'arishashila93@gmail.com', father: 'মৃত রায়হান উদ্দিন', district: 'পাবনা', job: '', institution: '', photo: '', facebook: '', smriti: 'বন্ধুরা তোরা ছিলি, তোরা আছিস, জানি তোরাই থাকবি। তোদের সাথে এত বেশি স্মৃতি আমার জীবনের সাথে জড়িয়ে আছে যা এক জীবনে ভোলা আমার পক্ষে সম্ভব না।', result: 'O+' },
+  { name: 'মোছাঃ ফাতেমা খাতুন', roll: 'এম-১৪০৮০৩০২৭', mobile: '01556-185440', email: 'farhah.fatema@yahoo.com', father: 'মোঃ জহির উদ্দিন', district: 'যশোর', job: '', institution: '', photo: '', facebook: '', smriti: 'চলে যাবে আজ আসিবে আগামী সেও থাকিবে না থেমে থাকিবে শুধু স্মৃতিগুলো হৃদয় নামের ফ্রেমে।', result: 'A+' },
+  { name: 'মোঃ পারভেজ রানা পলাশ', roll: 'এম-১৪০৮০৩০১২', mobile: '01985-690307', email: 'rparvez1991@gmail.com', father: 'মোঃ মারসেদ আলম', district: 'নওগাঁ', job: '', institution: '', photo: '', facebook: '', smriti: 'বিশ্ববিদ্যালয়ের জীবন শেষ হলেও যে আবেগজড়িত স্মৃতি, হৃদয় ছোঁয়া অনুভূতি এবং অকৃত্রিম ভালোবাসা আমাদের মধ্যে আছে, তা আগামী দিনের পথ চলার আলো হয়ে থাকবে।', result: 'A+' },
+  { name: 'মোঃ হাসিবুল হাসান', roll: 'এম-১৪০৮০৩০২১', mobile: '', email: '', father: '', district: '', job: '', institution: '', photo: '', facebook: '', smriti: '', result: '' },
+  { name: 'মোঃ কোহিনুর রহমান', roll: 'এম-১৪০৮০৩০২০', mobile: '', email: '', father: '', district: '', job: '', institution: '', photo: '', facebook: '', smriti: '', result: '' },
+  { name: 'রাহিমা', roll: 'এম-১৪০৮০৩০৬৫', mobile: '', email: '', father: '', district: '', job: '', institution: '', photo: '', facebook: '', smriti: '', result: '' },
+  { name: 'মাহমুদা আক্তার', roll: 'এম-১৪০৮০৩০৬০', mobile: '', email: '', father: '', district: '', job: '', institution: '', photo: '', facebook: '', smriti: '', result: '' }
+];
+
+// ============================================================
+// APP STATE
+// ============================================================
+let allData = [];
+let filteredData = [];
+let currentView = 'grid';
+let currentFilter = 'all';
+
+// ============================================================
+// INIT
+// ============================================================
+window.onload = async function() {
+  document.getElementById('shareUrlDisplay').textContent = window.location.href;
+  document.getElementById('totalCount').textContent = DEMO_DATA.length;
+
+  if (USE_DEMO) {
+    allData = DEMO_DATA;
+    filteredData = [...allData];
+    document.getElementById('totalCount').textContent = allData.length;
+    renderAlumni();
+    document.getElementById('loadingState').style.display = 'none';
+  } else {
+    await loadFromSheets();
+  }
+};
+
+// Load from Google Sheets via gviz API
+async function loadFromSheets() {
+  try {
+    const res = await fetch(SHEET_URL);
+    const text = await res.text();
+
+    // gviz response parse
+    const jsonStr = text.match(/google\.visualization\.Query\.setResponse\(([\s\S]*)\)/);
+    if (!jsonStr) throw new Error('Invalid gviz response');
+    const json = JSON.parse(jsonStr[1]);
+
+    const cols = json.table.cols.map(c => (c.label || '').toLowerCase().trim());
+    const rows = json.table.rows || [];
+
+    const fromSheet = rows
+      .map(r => {
+        let obj = {};
+        cols.forEach((col, i) => {
+          obj[col] = (r.c && r.c[i] && r.c[i].v !== null && r.c[i].v !== undefined)
+            ? String(r.c[i].v).trim() : '';
+        });
+        return obj;
+      })
+      .filter(r => r.name && r.name.trim());
+
+    // মার্জ: Sheet এ যারা আছে তাদের রাখো, বাকিরা DEMO থেকে নাও
+    const sheetRolls = new Set(fromSheet.map(r => r.roll));
+    const extraDemo = DEMO_DATA.filter(d => !sheetRolls.has(d.roll));
+    allData = [...fromSheet, ...extraDemo];
+
+    filteredData = [...allData];
+    document.getElementById('totalCount').textContent = allData.length;
+    document.getElementById('noticeBanner').style.display = 'none';
+    renderAlumni();
+  } catch (e) {
+    console.log('Sheets error, falling back to demo:', e);
+    allData = DEMO_DATA;
+    filteredData = [...allData];
+    renderAlumni();
+  } finally {
+    document.getElementById('loadingState').style.display = 'none';
+  }
+}
+
+// ============================================================
+// RENDER
+// ============================================================
+function renderAlumni() {
+  const grid = document.getElementById('alumniGrid');
+  const list = document.getElementById('alumniListView');
+  const empty = document.getElementById('emptyState');
+
+  if (filteredData.length === 0) {
+    grid.style.display = 'none';
+    list.style.display = 'none';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+
+  // Grid
+  grid.innerHTML = filteredData.map((p, i) => `
+    <div class="alumni-card" onclick="openDetail(${i})" style="animation-delay:${i*0.04}s">
+      <div class="card-avatar">
+        ${p.photo ? `<img src="${p.photo}" alt="${p.name}" onerror="this.style.display='none'">` : ''}
+        <div class="avatar-initial">${getInitial(p.name)}</div>
+      </div>
+      <div class="card-body">
+        <div class="card-name">${p.name}</div>
+        <div class="card-roll">${p.roll}</div>
+        ${p.job ? `<div class="card-job">💼 ${p.job}</div>` : ''}
+        ${p.workplace ? `<div class="card-job" style="color:#059669;">🏢 ${p.workplace}</div>` : ''}
+        <div class="card-district">📍 ${p.district || 'অজানা'}</div>
+        ${p.result ? `<span class="result-badge ${getBadgeClass(p.result)}">${p.result}</span>` : ''}
+      </div>
+    </div>
+  `).join('');
+
+  // List
+  list.innerHTML = filteredData.map((p, i) => `
+    <div class="list-card" onclick="openDetail(${i})" style="animation-delay:${i*0.03}s">
+      <div class="list-avatar">
+        ${p.photo ? `<img src="${p.photo}" alt="${p.name}" onerror="this.style.display='none'">` : getInitial(p.name)}
+      </div>
+      <div class="list-info">
+        <div class="list-name">${p.name}</div>
+        <div class="list-sub">${p.roll} • ${p.district || ''}</div>
+        ${p.job ? `<div class="list-sub">💼 ${p.job}</div>` : ''}
+        ${p.workplace ? `<div class="list-sub" style="color:#059669;">🏢 ${p.workplace}</div>` : ''}
+      </div>
+      ${p.result ? `<div class="list-badge ${getBadgeClass(p.result)}">${p.result}</div>` : ''}
+    </div>
+  `).join('');
+
+  if (currentView === 'grid') {
+    grid.style.display = 'grid';
+    list.style.display = 'none';
+  } else {
+    grid.style.display = 'none';
+    list.style.display = 'flex';
+  }
+}
+
+function getInitial(name) {
+  return name ? name.charAt(0) : '?';
+}
+
+function getBadgeClass(result) {
+  if (!result) return '';
+  const r = result.toUpperCase();
+  if (r.startsWith('A')) return 'badge-a';
+  if (r.startsWith('B') || r.startsWith('AB')) return 'badge-b';
+  return 'badge-o';
+}
+
+// ============================================================
+// DETAIL MODAL
+// ============================================================
+function openDetail(idx) {
+  const p = filteredData[idx];
+  const modal = document.getElementById('detailModal');
+
+  document.getElementById('modalAvatar').innerHTML =
+    p.photo ? `<img src="${p.photo}" onerror="this.style.display='none'">${getInitial(p.name)}` : getInitial(p.name);
+  document.getElementById('modalName').textContent = p.name;
+  document.getElementById('modalRoll').textContent = p.roll;
+
+  document.getElementById('modalBody').innerHTML = `
+    ${p.smriti ? `
+      <div class="info-section">
+        <h3>💬 স্মৃতিকথা</h3>
+        <div class="smriti-box">"${p.smriti}"</div>
+      </div>
+    ` : ''}
+
+    <div class="info-section">
+      <h3>📋 ব্যক্তিগত তথ্য</h3>
+      ${p.father ? `<div class="info-row"><div class="info-icon">👨</div><div><div class="info-label">পিতার নাম</div><div class="info-value">${p.father}</div></div></div>` : ''}
+      ${p.district ? `<div class="info-row"><div class="info-icon">📍</div><div><div class="info-label">জেলা</div><div class="info-value">${p.district}</div></div></div>` : ''}
+      ${p.result ? `<div class="info-row"><div class="info-icon">🎓</div><div><div class="info-label">রেজাল্ট</div><div class="info-value"><span class="result-badge ${getBadgeClass(p.result)}">${p.result}</span></div></div></div>` : ''}
+    </div>
+
+    ${(p.mobile || p.email || p.job || p.institution || p.facebook) ? `
+    <div class="info-section">
+      <h3>📞 যোগাযোগ ও পেশা</h3>
+      ${p.mobile ? `<div class="info-row"><div class="info-icon">📱</div><div><div class="info-label">মোবাইল</div><div class="info-value"><a href="tel:${p.mobile}" style="color:var(--sky);text-decoration:none;">${p.mobile}</a></div></div></div>` : ''}
+      ${p.email ? `<div class="info-row"><div class="info-icon">✉️</div><div><div class="info-label">ইমেইল</div><div class="info-value" style="word-break:break-all;">${p.email}</div></div></div>` : ''}
+      ${p.job ? `<div class="info-row"><div class="info-icon">💼</div><div><div class="info-label">পেশা</div><div class="info-value">${p.job}</div></div></div>` : ''}
+      ${p.institution ? `<div class="info-row"><div class="info-icon">🏢</div><div><div class="info-label">প্রতিষ্ঠান</div><div class="info-value">${p.institution}</div></div></div>` : ''}
+      ${p.workplace ? `<div class="info-row"><div class="info-icon">📍</div><div><div class="info-label">বর্তমান কর্মস্থল</div><div class="info-value" style="color:#059669;font-weight:600;">${p.workplace}</div></div></div>` : ''}
+      ${p.facebook ? `<div class="info-row"><div class="info-icon">👤</div><div><div class="info-label">ফেসবুক</div><div class="info-value"><a href="${p.facebook}" target="_blank" style="color:var(--sky);">প্রোফাইল দেখুন</a></div></div></div>` : ''}
+    </div>` : ''}
+
+    <div class="action-btns">
+      ${p.mobile ? `<button class="action-btn primary" onclick="window.open('tel:${p.mobile}')">📞 কল করুন</button>` : ''}
+      ${p.facebook ? `<button class="action-btn secondary" onclick="window.open('${p.facebook}')">👤 Facebook</button>` : ''}
+      ${!p.mobile && !p.facebook ? `<button class="action-btn secondary" style="flex:1" onclick="closeDetailModal();openAddForm()">✏️ তথ্য আপডেট করুন</button>` : ''}
+    </div>
+  `;
+
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeDetailModal() {
+  document.getElementById('detailModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function closeModal(e) {
+  if (e.target === document.getElementById('detailModal')) closeDetailModal();
+}
+
+// ============================================================
+// FILTER & SEARCH
+// ============================================================
+function filterAlumni() {
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  filteredData = allData.filter(p =>
+    (p.name && p.name.toLowerCase().includes(q)) ||
+    (p.roll && p.roll.toLowerCase().includes(q)) ||
+    (p.district && p.district.toLowerCase().includes(q)) ||
+    (p.job && p.job.toLowerCase().includes(q))
+  );
+  if (currentFilter !== 'all') {
+    filteredData = filteredData.filter(p => p.district && p.district.includes(currentFilter));
+  }
+  renderAlumni();
+}
+
+function filterByDistrict(district, el) {
+  document.querySelectorAll('.stat-chip').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  currentFilter = district;
+
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  filteredData = allData.filter(p => {
+    const matchQ = !q || (p.name && p.name.toLowerCase().includes(q)) || (p.roll && p.roll.toLowerCase().includes(q));
+    const matchD = district === 'all' || (p.district && p.district.includes(district));
+    return matchQ && matchD;
+  });
+  renderAlumni();
+}
+
+// ============================================================
+// VIEW TOGGLE
+// ============================================================
+function switchTab(view) {
+  currentView = view;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  event.target.classList.add('active');
+
+  const grid = document.getElementById('alumniGrid');
+  const list = document.getElementById('alumniListView');
+  if (view === 'grid') {
+    grid.style.display = 'grid';
+    list.style.display = 'none';
+  } else {
+    grid.style.display = 'none';
+    list.style.display = 'flex';
+  }
+}
+
+function toggleView() {
+  currentView = currentView === 'grid' ? 'list' : 'grid';
+  const grid = document.getElementById('alumniGrid');
+  const list = document.getElementById('alumniListView');
+  if (currentView === 'grid') {
+    grid.style.display = 'grid'; list.style.display = 'none';
+  } else {
+    grid.style.display = 'none'; list.style.display = 'flex';
+  }
+}
+
+// ============================================================
+// PAGE NAV
+// ============================================================
+function showPage(page) {
+  document.getElementById('alumniPage').style.display = page === 'alumni' ? 'block' : 'none';
+  document.getElementById('aboutPage').style.display = page === 'about' ? 'block' : 'none';
+  document.getElementById('navAlumni').classList.toggle('active', page === 'alumni');
+  document.getElementById('navAbout').classList.toggle('active', page === 'about');
+}
+
+// ============================================================
+// ADD FORM
+// ============================================================
+function openAddForm() {
+  document.getElementById('addFormOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeAddForm() {
+  document.getElementById('addFormOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function closeFormOverlay(e) {
+  if (e.target === document.getElementById('addFormOverlay')) closeAddForm();
+}
+
+async function submitForm(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  const msg = document.getElementById('formMessage');
+  btn.textContent = '⏳ সাবমিট হচ্ছে...';
+  btn.disabled = true;
+
+  const data = {
+    name: document.getElementById('fName').value,
+    roll: document.getElementById('fRoll').value,
+    mobile: document.getElementById('fMobile').value,
+    email: document.getElementById('fEmail').value,
+    father: document.getElementById('fFather').value,
+    district: document.getElementById('fDistrict').value,
+    job: document.getElementById('fJob').value,
+    institution: document.getElementById('fInstitution').value,
+    workplace: document.getElementById('fWorkplace').value,
+    facebook: document.getElementById('fFacebook').value,
+    photo: document.getElementById('fPhoto').value,
+    smriti: document.getElementById('fSmriti').value,
+    result: document.getElementById('fResult').value,
+  };
+
+  if (USE_DEMO) {
+    // Demo mode — add locally
+    setTimeout(() => {
+      allData.unshift(data);
+      filteredData = [...allData];
+      renderAlumni();
+      msg.style.display = 'flex';
+      msg.innerHTML = '✅ <div><strong>সফল!</strong> ডেমো মোডে যোগ হয়েছে। Google Sheets সংযুক্ত করলে স্থায়ী হবে।</div>';
+      btn.textContent = '💾 সাবমিট করুন';
+      btn.disabled = false;
+      document.getElementById('alumniForm').reset();
+    }, 800);
+    return;
+  }
+
+  // Real submission to Google Sheets
+  try {
+    const params = new URLSearchParams(data);
+    await fetch(`${SHEET_URL}?action=add&${params}`);
+    await loadFromSheets();
+    msg.style.display = 'flex';
+    msg.innerHTML = '✅ <div><strong>সফল!</strong> তথ্য Google Sheets এ যোগ হয়েছে।</div>';
+    document.getElementById('alumniForm').reset();
+  } catch(err) {
+    msg.style.display = 'flex';
+    msg.innerHTML = '❌ <div>সমস্যা হয়েছে। আবার চেষ্টা করুন।</div>';
+  } finally {
+    btn.textContent = '💾 সাবমিট করুন';
+    btn.disabled = false;
+  }
+}
+
+// ============================================================
+// SHARE
+// ============================================================
+function shareApp() {
+  if (navigator.share) {
+    navigator.share({
+      title: 'স্মৃতির পাতায় সমাজকর্ম',
+      text: 'জগন্নাথ বিশ্ববিদ্যালয় সমাজকর্ম বিভাগ ৬ষ্ঠ ব্যাচ অ্যালামনাই',
+      url: window.location.href
+    });
+  } else {
+    navigator.clipboard.writeText(window.location.href);
+    alert('লিংক কপি হয়েছে!');
+  }
+}
+
+// PWA Install prompt
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+});
+</script>
+</body>
+</html>
